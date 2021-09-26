@@ -7,8 +7,8 @@ const useStyles = makeStyles((theme) => ({
       flexGrow: 1,
     },
     block: {
-      height: '400px',
-      background: 'white',
+      minHeight: '100vh',
+      background: 'rgba(212,208,208,1)',
     },
     center: {
       display: 'block',
@@ -22,9 +22,9 @@ const useStyles = makeStyles((theme) => ({
   
     return (
       <div data-aos="fade-up"
-      data-aos-duration="3000">
+      data-aos-duration="1000">
 
-      <Grid container spacing={2} className={classes.block}>
+      <Grid id="About" container spacing={2} className={classes.block}>
         <Typography className={classes.center} variant="h1">
         Hello World
         </Typography>

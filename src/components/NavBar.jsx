@@ -1,7 +1,8 @@
 import React from 'react';
-import { AppBar, Toolbar, IconButton, Button, Typography } from '@material-ui/core';
+import { AppBar, Toolbar, IconButton, Button, Typography } from '@mui/material';
+import Box from '@mui/material/Box';
 import { makeStyles } from '@material-ui/core/styles';
-import MenuIcon from '@material-ui/icons/Menu';
+import MenuIcon from '@mui/icons-material/Menu';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -22,17 +23,29 @@ function NavBar() {
   const classes = useStyles();
 
   return (
-  <AppBar position="static" className={classes.appBar}>
-    <Toolbar>
-      <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-        <MenuIcon fontSize="small"/>
-      </IconButton>
-      <Typography variant="h6" className={classes.title}>
-        JB Labs
-      </Typography>
-      <Button color="inherit">Login</Button>
-    </Toolbar>
-  </AppBar>
+  <Box className={classes.root} >
+    <AppBar className={classes.appBar} position="static">
+      <Toolbar>
+        <IconButton
+          size="large"
+          edge="start"
+          color="inherit"
+          aria-label="menu"
+          sx={{ mr: 2 }}
+        >
+          <MenuIcon />
+        </IconButton>
+        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          JBLabs
+        </Typography>
+        <div>
+        <Button href="#Intro" color="inherit">Intro</Button>
+        <Button href="#About" color="inherit">About Me</Button>
+        <Button href="#Photos" color="inherit">Photos</Button>
+      </div>
+      </Toolbar>
+    </AppBar>
+  </Box>
   );
 }
 

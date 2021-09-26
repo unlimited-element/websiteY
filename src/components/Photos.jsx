@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
     },
     block: {
       height: '400px',
-      background: 'rgba(212,208,208,1)',
+      background: 'white',
     },
     center: {
       display: 'block',
@@ -17,14 +17,14 @@ const useStyles = makeStyles((theme) => ({
     },
   }));
   
-  function Items() {
+  function Photos() {
     const classes = useStyles();
   
     return (
       <div data-aos="fade-up"
-      data-aos-duration="1000">
+      data-aos-duration="3000">
 
-      <Grid container spacing={2} className={classes.block}>
+      <Grid id="Photos" container spacing={2} className={classes.block}>
         <Typography className={classes.center} variant="h1">
         Hello World
         </Typography>
@@ -33,4 +33,4 @@ const useStyles = makeStyles((theme) => ({
     );
   }
   
-  export default Items;
+  export default Photos;

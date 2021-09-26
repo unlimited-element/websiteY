@@ -8,7 +8,7 @@ import two from '../image/2.svg';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    height: '100vh'
+    minHeight: '100vh'
   },
   button: {
     color: 'blue',
@@ -25,7 +25,7 @@ function HomePage() {
 
   return (
 
-    <Grid className={classes.root} container spacing={2}>
+    <Grid id="Intro" className={classes.root} container spacing={2}>
         <Grid item xs={12} md={6}>
           <img className={classes.center} src={one} alt="one" width="500" height="400" />
         </Grid>

@@ -2,3 +2,7 @@
 body {
     margin: 0;
 }
+
+.highlight:hover {
+    background-color: white;
+ }
