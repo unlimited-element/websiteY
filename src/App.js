@@ -4,6 +4,8 @@ import HomePage from './components/HomePage';
 import Photos from './components/Photos';
 import About from './components/About';
 import Footer from './components/Footer';
+// import SimpleMediaQuery from './components/SimpleMediaQuery';
+
 import './App.css';
 
 function App() {
@@ -15,6 +17,7 @@ function App() {
       <About />
       <Photos />
       <Footer />
+      {/* <SimpleMediaQuery/> */}
     </>
     );
 }
